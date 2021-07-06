@@ -11,22 +11,22 @@ import pattern1.slot.SlotByManager;
 
 public class AppointmentFromManager implements Appointment{
     @Override
-    public DocPackage createDocPackage() {
+    public DocPackage createDocPackage(DocPackage docPackage) {
         return new DocPackageByManager();
     }
 
     @Override
-    public Patient addPatient() {
+    public Patient addPatient(Patient patient) {
         return new PatientByManager();
     }
 
     @Override
-    public Service addService() {
+    public Service addService(Service service) {
         return new ServiceByManager();
     }
 
     @Override
-    public Slot addSlot() {
+    public Slot addSlot(Slot slot) {
         return new SlotByManager();
     }
 

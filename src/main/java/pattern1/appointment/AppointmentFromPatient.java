@@ -11,22 +11,22 @@ import pattern1.slot.SlotByPatient;
 
 public class AppointmentFromPatient implements Appointment{
     @Override
-    public DocPackage createDocPackage() {
+    public DocPackage createDocPackage(DocPackage docPackage) {
         return new DocPackageByPatient();
     }
 
     @Override
-    public Patient addPatient() {
+    public Patient addPatient(Patient patient) {
         return new PatientByPatient();
     }
 
     @Override
-    public Service addService() {
+    public Service addService(Service service) {
         return new ServiceByPatient();
     }
 
     @Override
-    public Slot addSlot() {
+    public Slot addSlot(Slot slot) {
         return new SlotByPatient();
     }
 

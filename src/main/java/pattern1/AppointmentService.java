@@ -10,7 +10,7 @@ public class AppointmentService {
     public static final String FROM_MANAGER = "from_manager";
     public static final String FROM_PATIENT = "from_patient" ;
 
-    public Appointment createApplication(String creator){
+    public Appointment createAppointment(String creator){
         if(creator.equals(FROM_MANAGER)){
             return new AppointmentFromManager();
         }

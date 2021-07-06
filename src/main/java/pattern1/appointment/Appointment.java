@@ -6,8 +6,8 @@ import pattern1.service.Service;
 import pattern1.slot.Slot;
 
 public interface Appointment {
-    DocPackage createDocPackage();
-    Patient addPatient();
-    Service addService();
-    Slot addSlot();
+    DocPackage createDocPackage(DocPackage docPackage);
+    Patient addPatient(Patient patient);
+    Service addService(Service service);
+    Slot addSlot(Slot slot);
 }
