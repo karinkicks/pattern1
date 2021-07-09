@@ -1,4 +1,4 @@
-package pattern1.service;
+package pattern.service;
 public interface Service {
     Service getService();
 }

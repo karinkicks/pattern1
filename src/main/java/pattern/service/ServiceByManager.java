@@ -1,4 +1,4 @@
-package pattern1.service;
+package pattern.service;
 
 public class ServiceByManager implements Service {
     @Override

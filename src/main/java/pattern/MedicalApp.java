@@ -1,11 +1,14 @@
-package pattern1;
+package pattern;
 
-import pattern1.appointment.Appointment;
-import pattern1.appointment.CompositeAppointment;
-import pattern1.doc.DocPackage;
-import pattern1.patient.Patient;
-import pattern1.service.Service;
-import pattern1.slot.Slot;
+import pattern.appointment.Appointment;
+import pattern.appointment.CompositeAppointment;
+import pattern.doc.DocPackage;
+import pattern.listeners.ScoreboardListener;
+import pattern.listeners.WorkEmailListener;
+import pattern.patient.Patient;
+import pattern.producer.Editor;
+import pattern.service.Service;
+import pattern.slot.Slot;
 
 public class MedicalApp {
     private static DocPackage docPackage;
@@ -26,6 +29,12 @@ public class MedicalApp {
 
         Appointment appointments = new CompositeAppointment().add(appointment, appointment1, appointment2);
         service = appointments.addService(service);
+
+        //подписка
+        Editor editor = new Editor();
+        editor.events.subscribe("Ivanov", new ScoreboardListener("Табло в регистратуре"));
+        editor.events.subscribe("Volkov", new WorkEmailListener("admin@example.com"));
+        editor.visitDoctor("Ivanova", slot);
 
     }
 

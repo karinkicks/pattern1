@@ -1,8 +1,8 @@
-package pattern1;
+package pattern;
 
-import pattern1.appointment.Appointment;
-import pattern1.appointment.AppointmentFromManager;
-import pattern1.appointment.AppointmentFromPatient;
+import pattern.appointment.Appointment;
+import pattern.appointment.AppointmentFromManager;
+import pattern.appointment.AppointmentFromPatient;
 
 import java.util.NoSuchElementException;
 

@@ -1,13 +1,13 @@
-package pattern1.appointment;
+package pattern.appointment;
 
-import pattern1.doc.DocPackage;
-import pattern1.doc.DocPackageByPatient;
-import pattern1.patient.Patient;
-import pattern1.patient.PatientByPatient;
-import pattern1.service.Service;
-import pattern1.service.ServiceByPatient;
-import pattern1.slot.Slot;
-import pattern1.slot.SlotByPatient;
+import pattern.doc.DocPackage;
+import pattern.doc.DocPackageByPatient;
+import pattern.patient.Patient;
+import pattern.patient.PatientByPatient;
+import pattern.service.Service;
+import pattern.service.ServiceByPatient;
+import pattern.slot.Slot;
+import pattern.slot.SlotByPatient;
 
 public class AppointmentFromPatient implements Appointment{
     @Override

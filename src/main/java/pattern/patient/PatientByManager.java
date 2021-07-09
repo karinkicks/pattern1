@@ -1,4 +1,4 @@
-package pattern1.patient;
+package pattern.patient;
 
 public class PatientByManager implements Patient {
     @Override

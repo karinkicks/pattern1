@@ -1,9 +1,9 @@
-package pattern1.appointment;
+package pattern.appointment;
 
-import pattern1.doc.DocPackage;
-import pattern1.patient.Patient;
-import pattern1.service.Service;
-import pattern1.slot.Slot;
+import pattern.doc.DocPackage;
+import pattern.patient.Patient;
+import pattern.service.Service;
+import pattern.slot.Slot;
 
 public interface Appointment {
     DocPackage createDocPackage(DocPackage docPackage);

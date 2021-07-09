@@ -1,4 +1,4 @@
-package pattern1.slot;
+package pattern.slot;
 
 public class SlotByPatient implements Slot {
     @Override

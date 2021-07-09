@@ -1,4 +1,4 @@
-package pattern1.doc;
+package pattern.doc;
 
 public class DocPackageByManager implements DocPackage {
 
