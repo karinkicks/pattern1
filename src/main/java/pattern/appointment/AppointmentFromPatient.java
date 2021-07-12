@@ -9,7 +9,12 @@ import pattern.service.ServiceByPatient;
 import pattern.slot.Slot;
 import pattern.slot.SlotByPatient;
 
-public class AppointmentFromPatient implements Appointment{
+public class AppointmentFromPatient extends AppointmentImpl{
+
+    public AppointmentFromPatient(){
+        super();
+    }
+
     @Override
     public DocPackage createDocPackage(DocPackage docPackage) {
         return new DocPackageByPatient();
